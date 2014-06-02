@@ -1,0 +1,81 @@
+
+/*!
+ * KUSO Game JavaScript Library v1.0
+ *
+ * Copyright 2014 Butameron and OPAP-JP contributors.
+ * http://opap.jp/
+ *
+ * Dual licensed under the MIT and WTFPL licenses.
+ *
+ */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.audio-bgm{
+    display: none;
+}
+
+.audio-se{
+    display: none;
+}
+
+.gamescreen {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.gamescreen .scene{
+    width: 100%;
+    height: 100%;
+}
+
+.img-bg{
+    display:none;
+}
+
+.gamescreen .msg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+
+    border: 2px solid rgba(128, 0, 0, 0.7);
+    border-radius: 10px;
+
+    background-color: rgba(255, 0, 0, 0.7);
+    z-index: 100;
+
+}
+
+.gamescreen .btnarea-capsuletoy{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    text-align: center;
+
+}
+
+
+#scenario {
+    display: none;
+}

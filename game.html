@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/game.css" />
+</head>
+<body>
+    <header>
+        なんとかゲーム
+
+    </header>
+    <section id="gamescreen" class="gamescreen"></section>
+    <section class="debug-control">
+        デバッグ用コントロール
+        <button id="btnPrev">前へ</button>
+        <button id="btnNext">次へ</button>
+
+    </section>
+
+    <!--BEGIN: シナリオ-->
+    <article id="scenario">
+        <section class="env">
+            <!--************ 環境設定 ************-->
+            <!--クリック時のSE-->
+            <audio class="audio-se audio-se-onclick" src="audio/click.mp3" />
+        </section>
+        <section class="scene">
+            <img class="img-bg" src="img/001.jpg" />
+            <audio class="audio-bgm" src="audio/Hackbeat.mp3" loop="loop"></audio>
+            <div class="msg">
+                宇宙――そこは最後のフロンティア
+            </div>
+        </section>
+        <section class="scene">
+            <img class="img-bg" src="img/002.jpg" />
+            <audio class="audio-bgm" src="audio/Hackbeat.mp3" loop="loop"></audio>
+            <div class="msg">
+                あいうえお
+            </div>
+        </section>
+        <section class="scene scene-interactive scene-capsuletoy" data-action="jump-relative" data-jump-range-min="1" data-jump-range-max="3">
+            <img class="img-bg" src="img/002.jpg" />
+            <div class="btnarea-capsuletoy">
+                <button class="btn btn-primary btn-lg btn-capsuletoy">ガチャを回す</button>
+            </div>
+        </section>
+        <section class="scene" data-action="jump" data-jump-range-min="0" data-jump-range-max="0">
+            <img class="img-bg" src="img/001.jpg" />
+            <div class="msg">
+                高尾アパートを手に入れた
+            </div>
+        </section>
+        <section class="scene" data-action="jump" data-jump-range-min="0" data-jump-range-max="0">
+            <img class="img-bg" src="img/002.jpg" />
+            <div class="msg">
+                姫路市を手に入れた
+            </div>
+        </section>
+        <section class="scene" data-action="jump" data-jump-range-min="0" data-jump-range-max="0">
+            <img class="img-bg" src="img/002.jpg" />
+            <div class="msg">
+                國鉄を手に入れた
+            </div>
+        </section>
+        <section class="scene">
+            <img class="img-bg" src="img/002.jpg" />
+            <div class="msg">
+                やったね！
+            </div>
+        </section>
+    </article>    
+    <!--END: シナリオ-->
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+</html>
